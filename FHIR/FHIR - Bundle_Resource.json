@@ -1,0 +1,61 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:patient-990",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-990",
+        "name": [
+          {
+            "use": "official",
+            "family": "Connor",
+            "given": ["Sarah", "J." ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-05-12"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:obs-weight-990",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-weight-990",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs",
+                "display": "Vital Signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ],
+          "text": "Body Weight"
+        },
+        "subject": {
+          "reference": "Patient/patient-990"
+        },
+        "effectiveDateTime": "2024-08-10",
+        "valueQuantity": {
+          "value": 70,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        }
+      }
+    }
+  ]
+}

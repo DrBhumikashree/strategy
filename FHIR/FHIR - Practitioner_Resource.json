@@ -1,0 +1,19 @@
+{
+  "resourceType": "Practitioner",
+"id": "example-123",
+"name": [
+  {
+    "use": "official",
+    "family": "Reed",
+    "given": ["Evelyn"]
+  }
+],
+"telecom": [
+  {
+    "system": "email",
+    "value": "e.reed@clinic.example.com",
+    "use": "work"
+  }
+],
+"gender": "female"
+}
